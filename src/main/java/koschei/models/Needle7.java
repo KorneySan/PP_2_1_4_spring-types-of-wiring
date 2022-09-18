@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Needle7 {
 
-    @Autowired
     private Deth8 death;
     @Override
     public String toString() {
         return ", смерть Кощея на игле :( " + death.toString();
+    }
+    @Autowired
+    public void setDeath(Deth8 death) {
+        this.death = death;
     }
 }
